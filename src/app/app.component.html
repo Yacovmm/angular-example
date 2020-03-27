@@ -12,6 +12,7 @@
   <input type="text" [(ngModel)]="title" />
   <button (click)="btnClicked()">Click me</button>
   <button (click)="btnClicked2()">Zerar</button>
+
   <div *ngFor="let person of people">
     <h3 [ngClass]="{ red: person.age> 21 }">
       {{ person.name }} tem {{ person.age }}
@@ -19,4 +20,10 @@
   </div>
 
   <h3>{{today | date:"short"}}</h3>
+  <nav>
+    <a routerLink="first">First</a><br>
+    <a routerLink="sec">Second</a>
+  </nav>
 </div>
+
+<router-outlet></router-outlet>

@@ -21,6 +21,7 @@ export class AppComponent implements OnInit {
     this.people = this.peopleService.allPeople();
   }
 
+
   btnClicked = () => {
     this.count++;
   };
@@ -28,4 +29,5 @@ export class AppComponent implements OnInit {
   btnClicked2 = () => {
     this.count = 0;
   };
+
 }
