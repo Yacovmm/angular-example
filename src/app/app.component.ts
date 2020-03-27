@@ -19,6 +19,15 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.count = 1;
     this.people = this.peopleService.allPeople();
+
+    this.peopleService.newObservable$.subscribe(
+      data => {
+        console.log('obs data here:', data);
+      },
+      error => {
+        console.log(error);
+      }
+    );
   }
 
 
