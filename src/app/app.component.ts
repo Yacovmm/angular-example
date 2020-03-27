@@ -33,10 +33,10 @@ export class AppComponent implements OnInit {
 
   btnClicked = () => {
     this.count++;
-  };
+  }
 
   btnClicked2 = () => {
     this.count = 0;
-  };
+  }
 
 }
