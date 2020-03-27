@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-    <p>second works!</p>
+    <p>Child Animal is: {{ childAnimal }}</p>
     <button (click)="btnClicked()">Back</button>
 </div>
-<app-child [animal]= "myAnimal"></app-child>
+<app-child [animal]="myAnimal" (changed)="childChange($event)"></app-child>

@@ -11,6 +11,7 @@ import { Location } from '@angular/common';
 export class SecondComponent implements OnInit {
 
   myAnimal = 'Dog';
+  childAnimal = '';
 
 
   constructor(
@@ -25,6 +26,11 @@ export class SecondComponent implements OnInit {
 
   btnClicked = () => {
     this.location.back();
+  }
+
+  childChange = (evt) => {
+    console.log(evt);
+    this.childAnimal = evt;
   }
 
 }
