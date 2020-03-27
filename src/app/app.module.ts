@@ -8,9 +8,10 @@ import { PeopleService } from './people.service';
 import { AppRoutingModule } from './app-routing.module';
 import { FirstComponent } from './first/first.component';
 import { SecondComponent } from './second/second.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
-  declarations: [AppComponent, FirstComponent, SecondComponent],
+  declarations: [AppComponent, FirstComponent, SecondComponent, ChildComponent],
   imports: [
     BrowserModule,
     FormsModule,

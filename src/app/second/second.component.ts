@@ -10,7 +10,11 @@ import { Location } from '@angular/common';
 })
 export class SecondComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute,
+  myAnimal = 'Dog';
+
+
+  constructor(
+    private route: ActivatedRoute,
     private location: Location) { }
 
   ngOnInit() {
